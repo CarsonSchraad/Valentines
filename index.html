@@ -41,6 +41,11 @@
                 url('images/image2.jpeg'),
                 url('images/image3.jpeg'),
                 url('images/image4.jpeg'),
+                url('images/image5.jpeg'),
+                url('images/image1.jpeg'),
+                url('images/image2.jpeg'),
+                url('images/image3.jpeg'),
+                url('images/image4.jpeg'),
                 url('images/image5.jpeg');
             background-size: 150px 150px;
             background-repeat: no-repeat;
@@ -54,7 +59,12 @@
                 1020px 0,
                 1190px 0,
                 1360px 0,
-                1530px 0;
+                1530px 0,
+                1700px 0,
+                1870px 0,
+                2040px 0,
+                2210px 0,
+                2380px 0;
             opacity: 0.25;
             animation: panPhotos 40s linear infinite;
             pointer-events: none;
@@ -81,6 +91,11 @@
                 url('images/image7.jpeg'),
                 url('images/image8.jpeg'),
                 url('images/image9.jpeg'),
+                url('images/image10.jpeg'),
+                url('images/image6.jpeg'),
+                url('images/image7.jpeg'),
+                url('images/image8.jpeg'),
+                url('images/image9.jpeg'),
                 url('images/image10.jpeg');
             background-size: 150px 150px;
             background-repeat: no-repeat;
@@ -94,7 +109,12 @@
                 1020px 0,
                 1190px 0,
                 1360px 0,
-                1530px 0;
+                1530px 0,
+                1700px 0,
+                1870px 0,
+                2040px 0,
+                2210px 0,
+                2380px 0;
             opacity: 0.25;
             animation: panPhotos 45s linear infinite reverse;
             pointer-events: none;
@@ -109,6 +129,133 @@
             }
             100% {
                 transform: translateX(-50%);
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body::before,
+            body::after {
+                height: 100px;
+                background-size: 100px 100px;
+            }
+
+            body::before {
+                background-position: 
+                    0px 0, 
+                    120px 0, 
+                    240px 0, 
+                    360px 0, 
+                    480px 0,
+                    600px 0,
+                    720px 0,
+                    840px 0,
+                    960px 0,
+                    1080px 0,
+                    1200px 0,
+                    1320px 0,
+                    1440px 0,
+                    1560px 0,
+                    1680px 0;
+            }
+
+            body::after {
+                background-position: 
+                    0px 0, 
+                    120px 0, 
+                    240px 0, 
+                    360px 0, 
+                    480px 0,
+                    600px 0,
+                    720px 0,
+                    840px 0,
+                    960px 0,
+                    1080px 0,
+                    1200px 0,
+                    1320px 0,
+                    1440px 0,
+                    1560px 0,
+                    1680px 0;
+            }
+
+            .container {
+                padding: 40px 30px;
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .heart {
+                font-size: 3rem;
+            }
+
+            .question {
+                font-size: 1.1rem;
+            }
+
+            button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body::before,
+            body::after {
+                height: 80px;
+                background-size: 80px 80px;
+            }
+
+            body::before {
+                background-position: 
+                    0px 0, 
+                    95px 0, 
+                    190px 0, 
+                    285px 0, 
+                    380px 0,
+                    475px 0,
+                    570px 0,
+                    665px 0,
+                    760px 0,
+                    855px 0,
+                    950px 0,
+                    1045px 0,
+                    1140px 0,
+                    1235px 0,
+                    1330px 0;
+            }
+
+            body::after {
+                background-position: 
+                    0px 0, 
+                    95px 0, 
+                    190px 0, 
+                    285px 0, 
+                    380px 0,
+                    475px 0,
+                    570px 0,
+                    665px 0,
+                    760px 0,
+                    855px 0,
+                    950px 0,
+                    1045px 0,
+                    1140px 0,
+                    1235px 0,
+                    1330px 0;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .heart {
+                font-size: 2.5rem;
+            }
+
+            .question {
+                font-size: 1rem;
             }
         }
 
@@ -265,7 +412,6 @@
         <div class="response" id="response">
             <div class="response-message">
                 Zoe, you make me so happy every day.<br>
-                My life is so much better with you in it.<br>
                 I cant wait to spend my Valentine's Day with you!
             </div>
         </div>
