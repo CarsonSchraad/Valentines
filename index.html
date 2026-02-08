@@ -23,41 +23,87 @@
             position: relative;
         }
 
+        /* Scrolling photo background - top row */
         body::before {
-            content: '💕 ❤️ 💖 💗 💓 💕 ❤️ 💖 💗 💓 💕 ❤️ 💖 💗 💓 💕 ❤️ 💖 💗 💓';
+            content: '';
             position: absolute;
-            top: 0;
+            top: 10%;
             left: 0;
-            width: 200%;
-            height: 100%;
-            font-size: 3rem;
-            opacity: 0.1;
-            white-space: nowrap;
-            animation: panHearts 20s linear infinite;
+            width: 400%;
+            height: 150px;
+            background-image: 
+                url('images/image1.jpeg'),
+                url('images/image2.jpeg'),
+                url('images/image3.jpeg'),
+                url('images/image4.jpeg'),
+                url('images/image5.jpeg'),
+                url('images/image1.jpeg'),
+                url('images/image2.jpeg'),
+                url('images/image3.jpeg'),
+                url('images/image4.jpeg'),
+                url('images/image5.jpeg');
+            background-size: 150px 150px;
+            background-repeat: no-repeat;
+            background-position: 
+                0px 0, 
+                170px 0, 
+                340px 0, 
+                510px 0, 
+                680px 0,
+                850px 0,
+                1020px 0,
+                1190px 0,
+                1360px 0,
+                1530px 0;
+            opacity: 0.25;
+            animation: panPhotos 40s linear infinite;
             pointer-events: none;
-            line-height: 4rem;
             z-index: 0;
+            border-radius: 10px;
+            filter: blur(1px);
         }
 
+        /* Scrolling photo background - bottom row */
         body::after {
-            content: '💝 💘 💞 💟 ❣️ 💝 💘 💞 💟 ❣️ 💝 💘 💞 💟 ❣️ 💝 💘 💞 💟 ❣️';
+            content: '';
             position: absolute;
-            bottom: 0;
+            bottom: 10%;
             left: 0;
-            width: 200%;
-            height: 100%;
-            font-size: 2.5rem;
-            opacity: 0.08;
-            white-space: nowrap;
-            animation: panHearts 25s linear infinite reverse;
+            width: 400%;
+            height: 150px;
+            background-image: 
+                url('images/image6.jpeg'),
+                url('images/image7.jpeg'),
+                url('images/image8.jpeg'),
+                url('images/image9.jpeg'),
+                url('images/image10.jpeg'),
+                url('images/image6.jpeg'),
+                url('images/image7.jpeg'),
+                url('images/image8.jpeg'),
+                url('images/image9.jpeg'),
+                url('images/image10.jpeg');
+            background-size: 150px 150px;
+            background-repeat: no-repeat;
+            background-position: 
+                0px 0, 
+                170px 0, 
+                340px 0, 
+                510px 0, 
+                680px 0,
+                850px 0,
+                1020px 0,
+                1190px 0,
+                1360px 0,
+                1530px 0;
+            opacity: 0.25;
+            animation: panPhotos 45s linear infinite reverse;
             pointer-events: none;
-            line-height: 4rem;
-            display: flex;
-            align-items: center;
             z-index: 0;
+            border-radius: 10px;
+            filter: blur(1px);
         }
 
-        @keyframes panHearts {
+        @keyframes panPhotos {
             0% {
                 transform: translateX(0);
             }
@@ -218,8 +264,9 @@
 
         <div class="response" id="response">
             <div class="response-message">
-                Yay! You make me so happy! 🎉<br>
-                I can't wait to spend my Valentine's Day with you! 💕
+                Zoe, you make me so happy every day.<br>
+                My life is so much better with you in it.<br>
+                I cant wait to spend my Valentine's Day with you!
             </div>
         </div>
     </div>
